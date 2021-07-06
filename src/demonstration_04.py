@@ -25,4 +25,20 @@ Notes:
 
 def emotify(txt):
     # Your code here
+    emoji_dict = {"smile": ":D",
+                  "grin": ":)",
+                  "sad": ":(",
+                  "mad": ":P"}
+    # split sentence into words
+    words = list(txt.split(" "))
+    # Iterating on every word from the dict
+    for i in range(len(words)):
+        if words[i] in emoji_dict:
+            words[i] = emoji_dict[words[i]]
+    # Re-adding the whitespace
+    new_text = " ".join(words)
+    return new_text
+
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
 

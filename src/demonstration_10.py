@@ -17,5 +17,3 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
-
-

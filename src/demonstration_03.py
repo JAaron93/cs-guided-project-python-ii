@@ -13,7 +13,15 @@ Notes:
 - Bonus: Try to complete this challenge in one line!
 """
 
-
 def multiply_nums(nums):
     # Your code here
+    split = nums.split(', ')
+    result = 1
+    for s in split:
+        result = result * int(s)
+    return result
 
+print(multiply_nums("2, 3"))
+print(multiply_nums("1, 2, 3, 4"))
+print(multiply_nums("54, 75, 453, 0"))
+print(multiply_nums("10, -2"))
